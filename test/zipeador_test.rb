@@ -5,7 +5,9 @@ class ZipeadorTest < Minitest::Test
     refute_nil ::Zipeador::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_zip_unzip
+    zip = Zipeador.zip("filename.xml", "file")
+    Zipeador.unzip(zip)
+    assert true
   end
 end
