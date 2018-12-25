@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    zipeador (0.1.0)
+    zipeador (0.1.1)
+      rubyzip (>= 1.2.2)
 
 GEM
   remote: https://rubygems.org/
@@ -17,7 +18,6 @@ DEPENDENCIES
   bundler (~> 1.17)
   minitest (~> 5.0)
   rake (~> 10.0)
-  rubyzip (>= 1.2.2)
   zipeador!
 
 BUNDLED WITH

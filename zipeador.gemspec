@@ -6,22 +6,22 @@ require "zipeador/version"
 Gem::Specification.new do |spec|
   spec.name          = "zipeador"
   spec.version       = Zipeador::VERSION
-  spec.authors       = ["Ronald Macedo"]
-  spec.email         = ["ronaldmacedo@gmail.com"]
+  spec.authors       = ["Alf Macedo Lopez"]
+  spec.email         = ["alf@nubefact.com"]
 
-  spec.summary       = %q{Zip, Unzip}
+  spec.summary       = %q{Tools for Zip, Unzip in memory}
   spec.description   = %q{Enjoy!}
-  spec.homepage      = "https://nubefact.com"
+  spec.homepage      = "https://www.nubefact.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "'http://nubefact.com'"
+    spec.metadata["allowed_push_host"] = "https://github.com/alfml/zipeador"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "http://nubefact.com"
-    spec.metadata["changelog_uri"] = "http://nubefact.com"
+    spec.metadata["source_code_uri"] = "https://github.com/alfml/zipeador"
+    spec.metadata["changelog_uri"] = "https://github.com/alfml/zipeador"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -39,5 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
-  spec.add_development_dependency 'rubyzip', ">= 1.2.2"
+  spec.add_runtime_dependency 'rubyzip', ">= 1.2.2"
 end

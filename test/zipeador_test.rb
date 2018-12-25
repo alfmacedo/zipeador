@@ -6,7 +6,9 @@ class ZipeadorTest < Minitest::Test
   end
 
   def test_zip_unzip
+    # Zip
     zip = Zipeador.zip("filename.xml", "file")
+    # UnZip
     Zipeador.unzip(zip)
     assert true
   end
